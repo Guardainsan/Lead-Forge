@@ -1,0 +1,19 @@
+# Secrets — never commit
+.env
+.env.*
+*.key
+# Google OAuth client / credential files
+client_secret*.json
+*.credentials.json
+
+# n8n local data dir (contains the encrypted credential store + SQLite DB).
+# The API key lives here, so it must never be committed.
+.n8n/
+.cache/
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+*.log
+node_modules/
+.claude/

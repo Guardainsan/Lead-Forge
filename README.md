@@ -125,6 +125,14 @@ Two things this table demonstrates on its own:
 > n8n's built-in `row_number` from the read step — **no `id` column is added**.
 > This is robust against duplicate or blank `company_name`.
 
+## Results
+
+- [`results/gate-test-run.csv`](results/gate-test-run.csv) — the eight-lead gate-test input, including the `.example` placeholder address used to exercise the no-website path.
+- [`results/real-run-1.csv`](results/real-run-1.csv) — the first eight-company real-run input/export snapshot.
+- [`results/real-run-2.csv`](results/real-run-2.csv) — the second eight-company real-run input/export snapshot; its enrichment fields, including `fit_score`, are blank, so it does **not** substantiate a 9/10 result claim.
+
+> **Evidence note:** the recruitment-ICP 9/10 shown below is illustrative, not a measured LeadForge output. Do not describe it as a real-run result unless an enriched export with that score is committed.
+
 ---
 
 ## Setup
